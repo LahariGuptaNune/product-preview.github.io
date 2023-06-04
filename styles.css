@@ -1,0 +1,117 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+.main-container {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    /* min-height: 80%; */
+    max-width: 90%;
+    margin: 0 auto;
+    /* align-items: center; */
+    background-color: #ffff;
+    border-radius: 1em;
+    /* margin-top: 2em; */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.first-container {
+}
+
+.second-container {
+    display: grid;
+    margin: 1em;
+    
+}
+
+.top-heading{
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    /* font-family: Fraunces; */
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: hsl(180, 1%, 67%);
+}
+
+h1 {
+    font-family: "Montserrat", serif;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0;
+    color: hsl(180, 3%, 58%);
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.dis-price {
+    font-family: "Fraunces";
+    color:hsl(158, 36%, 37%);
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.act-price {
+    text-decoration: line-through;
+}
+
+button {
+    font-family: "Baskerville", sans-serif;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    padding: 1em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.main {
+    max-width: 90%;
+    background-color: hsl(30, 38%, 92%);
+    margin: 0 auto;
+    top: 6em;
+}
+
+@media screen and (min-width: 700px) {
+    .main-container {
+        flex-direction: row;
+        max-width: 50%;
+        margin-top: 6em;
+    }
+
+    .image {
+        min-height: 100%;
+        border-radius: 1em 0 0 1em;
+        /* border: 10px solid red; */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: white;
+        height: 100vh;
+    }
+
+    .main {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 1rem;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        /* max-width: 90%;
+        aspect-ratio: 1 / 1;
+        inset: 0; */
+    }
+}
